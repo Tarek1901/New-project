@@ -1,0 +1,33 @@
+using System;
+
+class Arithmetic
+{
+ public static void Main(string[] args)
+ {
+ double x, y, result = 0;
+ char ch;
+
+ Console.WriteLine("enter your x & y & ch:");
+ x = double.Parse(Console.ReadLine());
+ y = double.Parse(Console.ReadLine());
+ ch = char.Parse(Console.ReadLine());
+
+ Console.WriteLine("---------");
+
+ switch (ch)
+ {
+ case '+': result = x + y; break;
+ case '-': result = x - y; break;
+ case '_': result = x _ y; break;
+ case '/':
+ if (y != 0) result = x / y;
+ else Console.WriteLine("cannot divide by zero");
+ break;
+ default:
+ Console.WriteLine("invalid operator");
+ break;
+ }
+
+ Console.WriteLine("result = " + result);
+ }
+}
